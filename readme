@@ -1,0 +1,22 @@
+## introduction
+CUDE2PNG is a tool which can batch transform .cude files to .png file.
+Some image processing softwares like LightRoom or PhotoShop support .cube LUT, but some opensource softwares like digikam do not support.
+So I guess somebody may need this tool for additional custom 3D LUT.
+
+## how to 
+
+### prerequisite
+
+1. g++
+2. put your .cube files in `datas/cubes`
+
+### let's go
+1. build:`make build` or `make run`
+2. run `cude2png.exe`(I have compiled it in windows, but Linux has not been tested yet)
+
+### result
+Every .cube file will have its .png format file in `datas/pngs`
+
+## thanks
+1. https://github.com/ray-cast/lut
+2. https://github.com/lvandeve/lodepng
